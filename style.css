@@ -63,7 +63,7 @@ nav ul li a:hover {
 
 /* hero */
 .hero {
-    background-color: #f3f9fb;
+    background-color: #dde9e9;
     padding: 60px 0;
 }
 
@@ -115,7 +115,7 @@ nav ul li a:hover {
 
 /* products */
 .featured-products {
-
+    color: #000;
     margin-bottom: 40px;
 }
 
