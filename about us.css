@@ -1,0 +1,142 @@
+.about_us{
+    background-color: #dde9e9;
+    padding: 40px 0;
+}
+.container-about{    
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.container-about h2{
+    align-items: center;   
+    font-size: 32px;
+    color: #451c9f;
+    margin: 70px;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 1000px;   
+    font-size: 1.1em;
+    color: #666;
+    margin: 2px;
+}
+/* Feature Section (for Mission/Vision and How We Work) */
+.feature-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.feature-section:nth-of-type(odd) { /* Adds a slight background to alternate feature sections */
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-left: -20px; /* Counteract container padding */
+    margin-right: -20px;
+}
+
+
+.feature-section .feature-card,
+.feature-section .feature-content {
+    flex: 1; /* Allow content to take up available space */
+    min-width: 300px; /* Minimum width before wrapping */
+}
+
+.feature-section .feature-image {
+    flex: 1;
+    min-width: 300px; /* Minimum width before wrapping */
+    text-align: center;
+}
+
+.feature-section .feature-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.feature-section.reverse-layout {
+    flex-direction: row-reverse; /* Reverse order of content and image */
+}
+
+/* Specific styling for feature cards (Mission/Vision) */
+.feature-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(39, 38, 38, 0.981);
+    text-align: center;
+}
+
+.feature-card h3 {
+    color:#485155;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.feature-card p {
+    color: #555;
+}
+
+/* Our Values Grid */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.value-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(96, 89, 89, 0.529);
+    text-align: center;
+}
+
+.value-item .icon-heart,
+.value-item .icon-paw,
+.value-item .icon-home,
+.value-item .icon-trust {
+    font-size: 3em;
+    margin-bottom: 15px;
+    display: block; /* Ensures icon is on its own line */
+}
+
+/* Icon colors (optional, adjust as needed) */
+.value-item .icon-heart { color: #e74c3c; } /* Red */
+.value-item .icon-paw { color: #2ecc71; } /* Green */
+.value-item .icon-home { color: #3498db; } /* Blue */
+.value-item .icon-trust { color: #f39c12; } /* Orange */
+
+.value-item h4 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.4em;
+}
+
+.value-item p {
+    font-size: 0.95em;
+    color: #666;
+}
+/* Responsive adjustments for about us page */
+@media (max-width: 768px) {
+    .feature-section {
+        flex-direction: column; /* Stack content on smaller screens */
+    }
+
+    .feature-section.reverse-layout {
+        flex-direction: column; /* Ensure reversal also stacks */
+    }
+
+    .feature-section .feature-image {
+        order: -1; /* Puts image above content on smaller screens by default */
+    }
+.feature-section.reverse-layout .feature-image {
+        order: -1; /* Consistent order for reversed layouts too */
+   }
+}

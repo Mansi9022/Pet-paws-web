@@ -1,0 +1,83 @@
+.contact{
+    background-color: #dde9e9;
+    padding: 40px 0;
+}
+.container-contact{    
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.container-contact h2{
+    align-items: center;   
+    font-size: 32px;
+    color: #451c9f;
+    margin: 70px;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 1000px;   
+    font-size: 1.1em;
+    color: #666;
+    margin: 2px;
+}
+/* Common Card Styling for Contact Info and Form */
+.info-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.508);
+}
+
+.info-card h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+/* Contact Info List */
+.info-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.info-card ul li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.info-card ul li i { /* For the emoji icons */
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #007bff; /* Color for icons */
+    flex-shrink: 0; /* Prevent icons from shrinking */
+}
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center social icons */
+}
+
+.social-links a {
+    font-size: 2.5em; /* Size for emoji social icons */
+    color: #007bff;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none; /* Remove underline from social icons */
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: none;
+}
+

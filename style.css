@@ -117,6 +117,7 @@ nav ul li a:hover {
 .featured-products {
     color: #000;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .featured-products h2 {
@@ -165,8 +166,11 @@ nav ul li a:hover {
 
 /* footer */
 footer {
-    background-color: #f7f0f0;
+    background-color: #5a5a61;
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid #eee;
+}
+footer p{
+    color: #ffffff;
 }
