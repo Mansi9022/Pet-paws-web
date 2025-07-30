@@ -23,7 +23,7 @@
     color: #666;
     margin: 2px;
 }
-/* Common Card Styling for Contact Info and Form */
+/* Common Card Styling for Contact Info  */
 .info-card {
     background-color: #fff;
     padding: 30px;
@@ -80,4 +80,53 @@
     color: #0056b3; /* Darker blue on hover */
     text-decoration: none;
 }
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+   background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    background-color: #451c9f;
+}
+
+.info-card .btn{
+    padding: 4px 4px;
+    background: #441c9c;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.info-card  .btn:hover{
+    background-color: green;
+}
